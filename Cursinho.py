@@ -1,5 +1,6 @@
 import pandas as pd
 import win32com.client as win32
+
 # Importar base de dados
 tabela_vendas = pd.read_excel('Vendas.xlsx')
 
@@ -27,7 +28,7 @@ print('-'*50)
 # Enviar e-mail com relatório
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
-mail.To = 'Send To'
+mail.To = 'Send to'
 mail.Subject = 'Assunto (subject) Tentativa de email'
 mail.HTMLBody = f"""
 <p>Assunto em HTML</p>
