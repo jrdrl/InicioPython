@@ -97,4 +97,5 @@ for p in pontuacao:
 # split devolve lista com palavras como itens
 numero_palavras = len(texto.split())
 print("Número de palavras:", numero_palavras)
+
 """
