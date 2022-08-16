@@ -9,7 +9,7 @@ if Parcela > Permitido:
     print(f'Salário de {sal} valor permitido {Permitido}')
 else:
     print('Empréstimo condedido!')
-
+--------------------------------------------------------------------------
 # Receber altura e sexo de uma pessoa e calcule mostrando o peso ideal onde h corresponde a altura
 # Homens (72.7*h) - 58
 # Mulheres (62.1 * h) - 58
@@ -23,7 +23,7 @@ if sx in 'Mm':
 elif sx in 'Ff':
    peso_idealf = float((62.1 * h) - 58)
    str(print('Seu peso ideal é {}'.format(peso_idealf)))
-
+----------------------------------------------------------------------
 # Escrever um programa que leia um numero positivo > que zero e some todos os algarismos
 
 num = int(input('Insira o número a ser somado: '))
@@ -38,14 +38,13 @@ print('Unidade: {}'.format(u))
 print('Dezena: {}'.format(d))
 print('Centena: {}'.format(c))
 print('Milhar: {}'.format(m))
-
+------------------------------------------------------------------
 soma = 0
-a = 123
 b = str(num)  # Transformo em str para poder usar posição. Ex: "b[1] = 2"
 for i in range(len(b)):
     soma += int(b[i])
 print('O resultado da soma é {}'.format(soma))
-
+-------------------------------------
 # Ler um numero inteiro se > 0 log se < 0 invalido
 import math
 
@@ -55,7 +54,7 @@ if num <= 0:
     print('Número é inválido, selecione outro!')
 else:
     print(math.log(num))
-
+------------------------------------------------------------------------------
 # média ponderada de 3 notas primera e segunda peso 1 e 3a peso 2 , mostrar media e indicar ap ou rep >= 60
 nota1 = float(input('Insura a primeira nota aqui: '))
 peso1 = 1
@@ -74,7 +73,7 @@ if media > 60:
     print('Aprovado'.upper())
 else:
     print('Reprovado'.upper())
-
+----------------------------------------------------------
 n = 1
 P = 0
 I = 0
@@ -88,6 +87,7 @@ while n <= 10:
 
 print("A qtd de números pares é: ", P)
 print("A qtd de números ímpares é: ", P)
+----------------------------------
 
 texto = input("Digite um texto: ")
 pontuacao = [".", ",", ":", ";", "!", "?"]
@@ -97,5 +97,27 @@ for p in pontuacao:
 # split devolve lista com palavras como itens
 numero_palavras = len(texto.split())
 print("Número de palavras:", numero_palavras)
+--------------------------------------------
+
+# soma in range
+n=int(input("Digite um número positivo e inteiro: "))
+soma = 0
+if n > 0:
+  for i in range(n+1):
+    soma = soma + i
+    print("para n = ",i," a soma é: ", soma)
+  print("Pronto! A soma dos ",n," primeiros números naturais é: ",soma)
+elif n < 0:
+  print("Somente para números positivos!")
+----------------------------------------------
+n=int(input("Digite um número positivo e inteiro: "))
+soma = 0
+if n > 0:
+  for i in range(n+1):
+    soma = soma + i
+    print("para n = ",i," a soma é: ", soma)
+  print("Pronto! A soma dos ",n," primeiros números naturais é: ",soma)
+elif n < 0:
+  print("Somente para números positivos!")
 
 """
