@@ -55,5 +55,38 @@ if num <= 0:
     print('Número é inválido, selecione outro!')
 else:
     print(math.log(num))
-"""
+
 # média ponderada de 3 notas primera e segunda peso 1 e 3a peso 2 , mostrar media e indicar ap ou rep >= 60
+nota1 = float(input('Insura a primeira nota aqui: '))
+peso1 = 1
+
+nota2 = float(input('Insura a segunda nota aqui: '))
+peso2 = 1
+
+nota3 = float(input('Insura a terceira nota aqui: '))
+peso3 = 2
+
+media = ((nota1 * peso1) + (nota2 * peso2) + (nota3 * peso3)) / (peso1 + peso2 + peso3)
+
+print('Sua média nas três avaliações é de {:.2f}'.format(media))
+
+if media > 60:
+    print('Aprovado'.upper())
+else:
+    print('Reprovado'.upper())
+
+n = 1
+P = 0
+I = 0
+while n <= 10:
+    a = int(input())
+    n = n + 1
+    if a % 2 == 0:
+        P = P + 1
+    else:
+        I = I + 1
+
+print("A qtd de números pares é: ", P)
+print("A qtd de números ímpares é: ", P)
+
+"""

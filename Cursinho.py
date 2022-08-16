@@ -11,7 +11,7 @@ print(tabela_vendas)
 print('-'*50)
 # Faturamento por loja
 Faturamento = tabela_vendas[['ID Loja', 'Valor Final']].groupby('ID Loja').sum()
-print(Faturamento)
+print(Faturamento.sort_values(by=['Valor Final'], ascending=False))
 
 print('-'*50)
 # Quantidade de produtos vendidos por loja
