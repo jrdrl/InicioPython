@@ -16,21 +16,22 @@ print(Faturamento.sort_values(by=['Valor Final'], ascending=False))
 print('-'*50)
 # Quantidade de produtos vendidos por loja
 quantidade = tabela_vendas[['ID Loja', 'Quantidade']].groupby('ID Loja').sum()
-print(quantidade)
+print(quantidade.sort_values(by=['Quantidade'], ascending=False))
 
 print('-'*50)
 # Ticket médio por produto
 ticket_medio = (Faturamento['Valor Final'] / quantidade['Quantidade']).to_frame()
 ticket_medio = ticket_medio.rename(columns={0: 'Ticket Médio'})
-print(ticket_medio)
+print(ticket_medio.sort_values(by=['Ticket Médio'], ascending=False))
 
 print('-'*50)
 # Enviar e-mail com relatório
+"""
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
 mail.To = 'Send to'
 mail.Subject = 'Assunto (subject) Tentativa de email'
-mail.HTMLBody = f"""
+mail.HTMLBody = f
 <p>Assunto em HTML</p>
 
 <p> Segue o relatório de vendas de cada loja</p> 
@@ -47,7 +48,7 @@ mail.HTMLBody = f"""
 <p>Att,</p>
 <p>Jarod</p>
 
-"""
 mail.Send()
 
-print('Email enviado!')
+print('E-mail enviado!')
+"""
