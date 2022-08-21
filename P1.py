@@ -31,6 +31,7 @@ print('-' * 50)
 
 plt.figure(figsize=(10, 5))
 Faturamento['IDLoja'] = Faturamento.index  # Solução
+sns.set_palette('pastel')
 fat = sns.barplot(x='IDLoja', y='Valor Final', data=Faturamento,
                   order=Faturamento.sort_values('Valor Final', ascending=False).IDLoja,
                   palette='Blues_d')

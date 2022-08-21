@@ -19,3 +19,22 @@ for i in range(len(b)):
 print('O resultado da soma é {}'.format(soma))
 ---------------------------------------------------------------------------------
 """
+
+# Inserir 10 números e mostrar quais são impares e pares
+n = 1
+P = 0
+Im = 0
+num = [[], []]
+while n <= 10:
+    a = int(input('Insira um número: '))
+    n = n + 1
+    if a % 2 == 0:
+        P = P + 1
+    else:
+        Im = Im + 1
+
+
+print(f'{P} Nº Par')
+print(f'{Im} Nº Impar')
+print(f'Todos os valores {num}')
+num(0).append(a)
