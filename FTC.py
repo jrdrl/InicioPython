@@ -9,6 +9,6 @@ for c in range(1, num + 1):
     print(f'{c}', end='')
 print(f'O número {num} foi divisível {tot} vezes')
 if tot == 2:
-    print(f'{num}É primo')
+    print(f'{num} É primo')
 else:
-    print(f'{num}Não é primo')
+    print(f'{num} Não é primo')
