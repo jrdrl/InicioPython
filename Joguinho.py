@@ -1,6 +1,7 @@
-secret = 'chainsaw'
-digitadas = []
-chances = 3
+# Joguinho de advinhação de palavra
+secret = 'chainsaw'  # Digite a palavra desejada.
+digitadas = []  # Não alterar (Armazenamento das palavras digitadas)
+chances = 3  # Número de chances para o jogador
 
 while True:
     if chances <= 0:
