@@ -1,4 +1,4 @@
-# Joguinho de advinhação de palavra
+# Joguinho de adivinhação de palavra
 secret = 'chainsaw'  # Digite a palavra desejada.
 digitadas = []  # Não alterar (Armazenamento das palavras digitadas)
 chances = 3  # Número de chances para o jogador
